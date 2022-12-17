@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-2- Get Set Elements Content And Attributes</title>
+    <style>
+        span{
+            color: green;
+        }
+        .myParagraph{
+            color: red;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.w3schools.com/jsref/met_element_setattribute.asp">met_element_setattribute / W3S</a><br>
+    <a href="https://www.w3schools.com/jsref/met_element_getattribute.asp">met_element_getattribute / W3S</a><br>
+    <br>
+    <div class="js1">JavaScript <span>Div -1-</span> &lt;SPAN&gt; </div>
+    <div class="js2">JavaScript <span>Div -2-</span> &lt;SPAN&gt; </div>
+    <a href="">Google</a>
+    <br>
+    <img src="" alt="">
+    <p>Hello</p>
+    <p>Hello</p>
+    <p id="demo"></p>
+    <button onclick="setAttrDirectly1()">Set Text - HTML&Content</button>
+    <button onclick="setImgAttrDirectly1()">Set src-img</button>
+    <button onclick="setImgAttrDirectly2()">clear src-img</button>
+    <button onclick="setImgAttrDirectly3()">Set title-img</button>
+    <button onclick="setLinkAttrDirectly4()">Set href-link</button>
+    <button onclick="getAttrValueDirectly()">Get hrefValue-link</button>
+    <button onclick="setParagraphAttrDirectly5()">Set className-P</button>
+    <br>
+    <button onclick="getIdParagraph()">getAttribute-id-for p[2]</button>
+    <button onclick="setClassParagraph()">setAttribute-class-for p[1]</button>
+
+    <script src="12-2-dom.js"></script>
+</body>
+</html>

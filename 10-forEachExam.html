@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEachExam</title>
+    <style>
+        *{box-sizing: border-box;}
+        ul li:hover{
+            cursor: pointer;
+            color: red;
+        }
+        ul .selected{
+            color: green;
+            font-style: italic;
+        }
+        ul .selected:hover{
+            color: green;
+        }
+        .container{
+            width: 90%;
+            margin: auto;
+            /* margin-top: 50px; */
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+        }
+        .container div{
+            width: 150px;
+            height: 100px;
+            padding: 30px;
+            /* margin: 40px; */
+            background-color: azure;
+            color: rgb(148, 5, 5);
+            border: 2px solid red;
+            visibility: hidden;
+        }
+        .container .active{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h3>Click on Item</h3>
+    <ul>
+        <li class="selected">One</li>
+        <li>Tow</li>
+        <li>Three</li>
+    </ul>
+    <div class="container">
+        <div class="active">
+            Heloo One
+        </div>
+        <div>
+            Heloo Tow
+        </div>
+        <div>
+            Heloo Three
+        </div>
+    </div>
+
+    <script src="10-forEachExam.js"></script>
+</body>
+</html>

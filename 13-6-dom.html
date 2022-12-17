@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <base target="_blank">
+    <style>
+        body{
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* height: 1200px; */
+        }
+        a{
+            font-size: 18px;
+            font-style: italic;
+            line-height: 28px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .container div{
+            width: 50%;
+        }
+        .container p{
+            text-align: left;
+            margin: 5px;
+        }
+        .container span{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode">cloneNode / MDN</a><br>
+            <a href="https://www.w3schools.com/jsref/met_node_clonenode.asp">met_node_clonenode / W3S</a><br>
+            <a href="https://www.javascripttutorial.net/javascript-dom/javascript-clonenode/">clonenode / javascripttutorial</a><br>
+            <a href="https://www.tutorialspoint.com/clonenode-method-in-javascript">clonenode / tutorialspoint</a><br>
+            <a href=""></a><br>
+            <a href=""></a><br>
+            <a href=""></a><br>
+        </div>
+        <div id="div2" class="div2">
+            <h2>DOM Element cloneNode()</h2>
+            <p id="para">
+                The <span>cloneNode()</span> method creates <span>a copy</span> of a <span>node</span>, and returns the clone.<br>
+                The cloneNode() method clones all attributes and their values. <br>
+                Set the deep parameter to <span>true</span> if you also want to clone descendants <span>(children)</span>.
+            </p>
+            <button onclick="CloneP()">Clone the P</button>
+        </div>
+    </div>
+
+    <script src="13-6-dom.js"></script>
+</body>
+</html>

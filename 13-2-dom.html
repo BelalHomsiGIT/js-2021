@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <base target="_blank">
+    <style>
+        body{
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* height: 1200px; */
+        }
+        a{
+            font-size: 18px;
+            font-style: italic;
+            line-height: 28px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .test{
+            color: rgb(3, 3, 136);
+        }
+        .overall{
+            border: 1px solid red;
+            font-size: 20px;
+        }
+        .otherdiv{
+            border: 1px solid blue;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" class="container test">
+        <div>
+            <h2>classList</h2>
+            <ul style="list-style-type:none; text-align: left;">
+            <li>The classList property returns the CSS classnames of an element.</li>
+            <li>The classList property returns a DOMTokenList object.</li>
+            <li>The classList property is read-only, but you can use add() and remove() methods to add or remove CSS classes.</li>
+            </ul>
+        </div>
+        <div>
+            <a href="https://www.w3schools.com/jsref/prop_element_classlist.asp">prop_element_classlist - All/ W3S</a><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">classList / MDN</a><br>
+            <a href="https://www.javascripttutorial.net/dom/css/check-if-an-element-contains-a-class/">contains-a-class/ javascripttutorial</a><br>
+            <a href="https://www.w3schools.com/jsref/met_node_contains.asp">met_node_contains / W3S</a><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/add">DOMTokenList/add / MDN</a><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle">toggle / MDN</a><br>
+            <a href="https://www.w3schools.com/howto/howto_js_toggle_class.asp">toggle_class / W3S</a><br>
+            <a href=""></a><br>
+            <a href=""></a><br>
+            <a href=""></a><br>
+        </div>
+    </div>
+    <button onclick="addClassToM()">Add Class To Main</button>
+    <button onclick="addClassToO()">Add Class To Others</button>
+    <button onclick="removeFromM()">Remove Classes</button>
+    <button onclick="swapInM()">Toggle ClassName</button>
+
+    <script src="13-2-dom.js"></script>
+</body>
+</html>

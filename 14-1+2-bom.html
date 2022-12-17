@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM -1-</title>
+
+    <base target="_blank">
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* height: 1200px; */
+        }
+        a{
+            font-size: 18px;
+            font-style: italic;
+            line-height: 28px;
+        }
+        p{
+            font-size: 18px;
+            text-indent: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Window - The Browser Object Model (BOM)</h1>
+        <div style="text-align: left; padding-left: 8px;">
+            <h3>The Browser Object Model (BOM) allows JavaScript to "talk to" the browser.</h3>
+            <h2>The Browser Object Model (BOM)</h2>
+            <p>There are no official standards for the Browser Object Model (BOM). <br>
+                Since modern browsers have implemented (almost) the same methods and properties <br>
+                for JavaScript interactivity, it is often referred to, as methods and properties of the BOM.
+            </p>
+            <h2>The Window Object</h2>
+            <p>The <b>window object</b> is supported by all browsers. It represents the <b>browser's window.</b> <br>
+                All global JavaScript objects, functions, and variables automatically become members of the <b>window object.</b> <br>
+                Global variables are properties of the <b>window object.</b> <br>
+                Global functions are methods of the <b>window object.</b> <br>
+                Even the document object (of the HTML DOM) is a property of the <b>window object:</b> <br>
+                <b> window.document.getElementById("header"); </b> <br>
+                is the same as: <br>
+                <b>document.getElementById("header"); </b>
+            </p>
+            <h2>What can we do with the <b>window object?</b></h2>
+            <p>Some <b>window object</b> methods: <br>
+                window.open() - open a new window <br>
+                window.close() - close the current window <br>
+                window.moveTo() - move the current window <br>
+                window.resizeTo() - resize the current window</p>
+        </div>
+        <div>
+            hello bom
+        </div>
+    </div>
+
+    <script src="14-1+2-bom.js"></script>
+</body>
+</html>

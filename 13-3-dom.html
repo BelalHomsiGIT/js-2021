@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <base target="_blank">
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* height: 1200px; */
+        }
+        a{
+            font-size: 18px;
+            font-style: italic;
+            line-height: 28px;
+        }
+    </style>
+    <link rel="stylesheet" href="13-3-dom.css">
+</head>
+<body>
+    <div id="main" class="container">
+        <h1>DOM & CSS</h1>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet">CSSStyleSheet / MDN</a><br>
+        <a href="http://www.javascriptkit.com/dhtmltutors/externalcss3.shtml">javascriptkit</a><br>
+    </div>
+    <br>
+    <button onclick="cssWithStyle()">Change Style</button>
+    <button onclick="cssWithcssText()">Change cssText</button>
+    <button onclick="cssWithSetProp()">Change cssSet</button>
+    <button onclick="cssWithRemoveProp()">Change cssRemove</button>
+    <br>
+    <h2>Edit the cs file by styleSheets</h2>
+    <button onclick="cssWithStyleSheets1()">Set</button>
+    <button onclick="cssWithStyleSheets2()">Remove</button>
+
+    <script src="13-3-dom.js"></script>
+</body>
+</html>

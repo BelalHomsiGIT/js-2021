@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <base target="_blank">
+    <style>
+        body{
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* height: 1200px; */
+        }
+        a{
+            font-size: 18px;
+            font-style: italic;
+            line-height: 28px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .container div{
+            width: 50%;
+        }
+        .container p{
+            text-align: left;
+            margin: 5px;
+        }
+        .container span{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <h2>addEventListener() method</h2>
+            <p id="para">
+                The <span>addEventListener()</span> method <span>attaches an event handler to the specified element, without overwriting existing event handlers.</span>
+                You can <span>add many</span> event handlers of <span>the same type</span> to <span>one element</span>, i.e <span>two "click" events</span>.
+                You can add event listeners to any DOM object not only HTML elements. i.e the window object.
+                The addEventListener() method makes it easier to control how the event reacts to <span>bubbling.</span><br>
+                When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup. <br>
+                You can easily remove an event listener by using the removeEventListener() method.
+            </p>
+            <a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp">js_htmldom_eventlistener / W3s</a><br>
+            <a href="https://www.w3schools.com/jsref/met_document_addeventlistener.asp">DOM Document addEventListener() / W3S</a><br>
+            <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_addeventlistener3">Example / W3S</a><br>
+            <a href="https://www.educba.com/addeventlistener-javascript/">addeventlistener / educba</a><br>
+            <a href="https://www.javatpoint.com/javascript-addeventlistener">addeventlistener / javatpoint</a><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">addEventListener MDN</a><br>
+            <a href="https://www.tutorialspoint.com/what-is-event-bubbling-and-capturing-in-javascript#:~:text=With%20bubbling%2C%20the%20event%20is,propagated%20to%20the%20inner%20elements.">What is event Bubbling and capturing in JavaScript?/ tutorialspoint</a><br>
+            <a href="https://javascript.info/bubbling-and-capturing">bubbling-and-capturing / javascript</a><br>
+            <a href="https://www.geeksforgeeks.org/what-is-event-bubbling-and-event-capturing-in-javascript/">geeksforgeeks / bubbling and Event Capturing in JavaScript / </a><br>
+            <a href="https://blog.bitsrc.io/event-bubbling-and-capturing-in-javascript-6bc908321b22">bubbling-and-capturing / blog.bitsrc.io</a><br>
+            <a href="https://www.w3schools.com/jsref/event_target.asp">target Event Property / W2S</a><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/target">Event.target / MDN</a><br>
+            <a href="https://pawelgrzybek.com/cloning-dom-nodes-and-handling-attached-events/">cloning-dom-nodes-and-handling-attached-events / pawelgrzybek</a><br>
+            <a href="https://www.delftstack.com/howto/javascript/javascript-event-listener-list/">event-listener-list / delftstack</a><br>
+            <a href="https://www.sqlpac.com/en/documents/javascript-listing-active-event-listeners.html">listing-active-event-listeners / sqlpac</a><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">EventTarget/addEventListener / MDN</a><br>
+            <span style="text-align: center; font-weight: bold; font-style: italic; color:green">Very Important Referenece:</span>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Events">Events reference / MDN</a><br>
+            <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">dom_obj_event Reference / W3S</a><br>
+
+        </div>
+        <div id="div2" class="div2" style="border-left: 1px solid blue; padding-left: 10px;">
+            <!-- 1- HTML Event Attributes:-->
+            <h2>1- HTML Event Attributes:</h2>
+            <div style="width: 100%; display: flex; justify-content: space-between;">
+            <p onclick="console.log('Test Paragraph-1-')">P1 Click, look at console</p>
+            <h4 onclick="this.innerHTML = 'WoW'">Click me</h4>
+            <p onclick="myFun1()">P2 Click, look at console</p>
+            <h4 onmouseover="myFun2(this)" onmouseout="myFun3(this)">Mouse Over Me !</h4>
+            </div>
+            <!-- 2- Assign Events Using the HTML DOM-->
+            <h2>2- Assign Events Using the HTML DOM</h2>
+            <div style="width: 100%; display: flex; justify-content: space-between;">
+            <p id="testp3">P3 Click here.</p>
+            <p id="testp4">P4 Click here!!</p>
+            <input type="text" id="input1" placeholder="Enter small letters">
+            </div>
+            <!--3- HTML DOM EventListener-->
+            <h2>3- HTML DOM EventListener</h2>
+            <p id="testp5">P5 Click, using addEventListener method</p>
+            <p id="testp6">P6 Over me, using addEventListener method</p>
+            <p id="testp7">P7 I have 2 clicks event - look at consloe</p>
+            <h3 style="text-align: left;">We have a paragraph, and we will create a clone:</h3>
+            <p id="testp8">P8 This an original paragraph. Click On to create a clone.</p>
+            <h3 style="text-align: left;">Now we will create a clone and get it a class name:</h3>
+            <p id="testp9">P9 This a new original paragraph. Click On to create a clone, with class name.</p>
+            <h3 style="text-align: left;">Now How we add event to the clone one?</h3>
+            <p style="color: rgb(100, 100, 100);">We will addEventListener to an element which not found in document yet ! </p>
+            <p style="color: rgb(100, 100, 100);">By using the target of event, event.target get me the element which triggered the event:</p>
+            <p id="testp10">P10 Click me to clone one with class name and eventlistener.Then click the cloned one.</p>
+        </div>
+    </div>
+
+    <script src="13-7-dom.js"></script>
+</body>
+</html>

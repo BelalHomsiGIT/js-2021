@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-3-Check Attributes</title>
+
+    <!-- make all href as target=_blank -->
+    <base target="_blank">
+    <style>
+        body{
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        a{
+            font-size: 18px;
+            font-style: italic;
+            line-height: 28px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM - HTML Element Attributes</h1>
+    <a href="https://www.w3schools.com/jsref/met_node_hasattributes.asp">hasattributes / W3S</a><br>
+    <a href="https://www.w3schools.com/jsref/met_element_hasattribute.asp">hasattribute / W3S</a><br>
+    <a href="https://www.w3schools.com/jsref/met_element_removeattribute.asp">removeattribute / W3S</a><br>
+    <a href="https://www.w3schools.com/jsref/prop_node_attributes.asp">attributes (property) / W3S</a><br>
+    <div>
+        <p title="Test" class="demo" data-test="anything">My Paragraph 1</p>
+        <p style="color: red;">My Paragraph 2</p>
+        <button onclick="RemoveSeteAttrFromP1()">Remove/Set-style attribute</button>
+    </div>
+
+    <script src="12-3-dom.js"></script>
+</body>
+</html>

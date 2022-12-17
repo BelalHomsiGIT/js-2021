@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <base target="_blank">
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+            /* text-align: center; */
+            /* height: 1200px; */
+        }
+        .links{
+            text-align: center;
+        }
+        a{
+            font-size: 18px;
+            font-style: italic;
+            line-height: 28px;
+            text-align: center;
+        }
+        h2,h3{
+            margin-left: 10px;
+        }
+        p{
+            font-size: 18px;
+            margin-left: 25px;
+        }
+        span{
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>setTimeout()</h1>
+    <p>The <span>global</span> setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.</p>
+    <h2>Syntax</h2>
+    <p>var timeoutID = setTimeout(function[, delay, arg1, arg2, ...]); <br>
+       var timeoutID = setTimeout(function[, delay]); <br>
+       var timeoutID = setTimeout(code[, delay]); <span>" not recommended" </span> <br>
+    </p>
+    <h2>Parameters</h2>
+    <h3>function</h3>
+     <p>A function to be executed after the timer expires.</p>
+     
+     
+    <h3>The time delay (Optional)</h3>
+     <p>in milliseconds that the timer should wait before the specified function or code is executed. If this parameter is omitted, a value of 0 is used, meaning execute "immediately",</p>
+    
+    <h3>function</h3>
+     <p>A function to be executed after the timer expires.</p>
+    
+    <div class="links">
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/setTimeout">setTimeout/MDN</a><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout">clearTimeout/MDN</a><br>
+    <a href="https://www.programiz.com/javascript/setTimeout">setTimeout/programiz</a> <br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/setInterval">setInterval/MDN</a><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/clearInterval">clearInterval/MDN</a><br>
+    </div>
+    <script src="14-3-bom.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-8-FormValidation</title>
+
+    <base target="_blank">
+    <style>
+        body{
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* height: 1200px; */
+        }
+        a{
+            font-size: 18px;
+            font-style: italic;
+            line-height: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-around;">
+    <div style="margin-top: 30px;">
+        Enter the mouse at the link, -Console- <br>
+        <a href="https://www.w3schools.com/js/js_validation.asp">*validation / W3S- Not work (preventDefault)*</a><br>
+        <a href="https://www.w3schools.com/js/js_validation.asp">validation / W3S</a><br>
+        <a href="https://www.w3schools.com/html/html_form_attributes.asp">html_form_attributes / W3S</a><br>
+        <a href="https://www.w3schools.com/html/html_form_attributes_form.asp">form* Attributes / W3S</a><br>
+        <a href="https://www.w3schools.com/jsref/event_preventdefault.asp">event_preventdefault / W3S</a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault">preventDefault / MDN</a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation">Form_validation / MDN</a><br>
+        <a href="https://dev.to/javascriptacademy/form-validation-using-javascript-34je">form-validation / dev.to</a><br>
+        <a href="https://www.tutorialspoint.com/javascript/javascript_form_validations.htm">form_validations / tutorialspoint</a><br>
+        <a href="https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/">form_validations / javascripttutorial</a><br>
+        <a href="https://www.formget.com/javascript-onsubmit/#:~:text=When%20a%20user%20clicks%20on,event%20will%20call%20a%20function.&text=In%20our%20example%2C%20we%20call,value%20either%20true%20or%20false.">example / formget</a><br>
+        <a href="https://www.webtrickshome.com/javascript/javascript-form-validation">form_validations / webtrickshome</a><br>
+        <a href="https://iqcode.com/code/javascript/javascript-onsubmit-form-validation">form_validations / iqcode</a><br>
+        <a href="http://www.javascriptkit.com/javatutors/form6.shtml">form / javascriptkit</a><br>
+        <a href="https://www.javatpoint.com/javascript-form-validation">form_validations / javatpoint</a><br>
+    </div>
+    <div style="margin-top: 60px;">
+        <form action="">
+            <p>Enter Text in Box's, Cloick 1-Test Inputs, then Submit</p>
+            <p id="notice"></p>
+            <input type="text" name="username" placeholder="10 chars Max"><br><br>
+            <input type="text" name="userage" placeholder="empty not allowed!"><br><br>
+            <input type="submit"><br><br>
+        </form>
+        <button onclick="testInputs()">1-Test Inputs</button><br>
+        <a href="https://google.com">Google</a><br>
+        <small id="prevent" style="color: red;"></small>
+    </div>
+    </div>
+
+    <script src="12-8-dom-validation.js"></script>
+</body>
+</html>

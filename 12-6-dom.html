@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-6-Deal With Children's</title>
+     <!-- make all href as target=_blank -->
+     <base target="_blank">
+     <style>
+         body{
+             background-color: azure;
+             margin: 0;
+             padding: 0;
+             text-align: center;
+         }
+         a{
+             font-size: 18px;
+             font-style: italic;
+             line-height: 28px;
+         }
+     </style>
+</head>
+<body>
+    <h1>children & childNodes and other properties</h1>
+    <div style="text-align: left; margin-left: 20px;">
+        <h2>HTML Nodes vs Elements</h2>
+        <ul>
+            <li>In the HTML DOM (Document Object Model), an HTML document is a collection of nodes with (or without) child nodes.</li>
+            <li>Nodes are element nodes, text nodes, and comment nodes.</li>
+            <li>Whitespace between elements are also text nodes.</li>
+            <li>Elements are only element nodes.</li>
+        </ul>
+    </div>
+    <div style="text-align: left; margin-left: 20px;">
+        <h2>childNodes vs children</h2>
+        <ul>
+            <li>childNodes returns child nodes (element nodes, text nodes, and comment nodes).</li>
+            <li>children returns child elements (not text and comment nodes).</li>
+        </ul>
+    </div>
+    <div style="text-align: left; margin-left: 20px;">
+        <h2 style="color: red;">Important!</h2>
+        <h3>childNodes returns <u><i>nodes</i></u>: Element nodes, text nodes, and comment nodes.
+            Whitespace between elements are also text nodes.</h3>
+        <h3>The children property returns <u><i>elements</i></u> (ignores text and comments).</h3>
+    </div>
+    <hr>
+    <div style="display: flex; justify-content: space-around;">
+    <div>
+        <a href="https://www.w3schools.com/jsref/prop_element_children.asp">prop_element_children / W3S</a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/children">Element/children / MDN</a><br>
+        <a href="https://www.w3schools.com/jsref/prop_node_childnodes.asp">node_childnodes / W3S</a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes">Node/childNodes / MDN</a><br>
+        <a href="https://www.google.com/search?q=children+in+javascript&sxsrf=APq-WBudqsorQ6H5s_R4ROhhw4dycADQmQ%3A1646869516714&ei=DDwpYvmWK8_msAebx7oQ&oq=children+in+java&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCAAQgAQ6BwgjEOoCECc6BAgjECc6BQgAEJECOggIABCABBCxAzoRCC4QgAQQsQMQgwEQxwEQ0QM6DgguEIAEELEDEMcBEKMCOgQIABBDOgQILhBDOgoILhCxAxCDARBDOgUILhCABDoLCAAQgAQQsQMQgwE6BwguENQCEEM6BwguELEDEEM6CwguEIAEELEDENQCOg4ILhCABBCxAxCDARDUAjoICC4QgAQQ1AI6DgguEIAEELEDEMcBENEDOgoIABCABBCHAhAUOgUIABCGA0oECEEYAEoECEYYAFDMDljMQmDSWGgBcAF4AIAB4AGIAZgYkgEGMC4xMS41mAEAoAEBsAEKwAEB&sclient=gws-wiz">google</a><br>
+        <a href=""></a><br>
+    </div>
+    <div>
+        <a href="https://www.w3schools.com/jsref/prop_element_firstelementchild.asp">element_firstelementchild / W3S</a><br>
+        <a href="https://www.w3schools.com/jsref/prop_element_lastelementchild.asp">element_lastelementchild / W3S</a><br>
+        <a href="https://www.w3schools.com/jsref/prop_element_childelementcount.asp">element_childelementcount / W3S</a><br>
+    </div>
+    <article>
+        <h2>h2 in artcle element</h2>
+        <p>Hello World!</p>
+        <button onclick="changeText()">change P content</button>
+        <!--This is test comment in article-->
+    </article>
+    </div>
+
+
+    <script src="12-6-dom.js"></script>
+</body>

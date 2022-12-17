@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <base target="_blank">
+    <style>
+        body{
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* height: 1200px; */
+        }
+        a{
+            font-size: 18px;
+            font-style: italic;
+            line-height: 28px;
+        }
+        p{
+            font-size: 18px;
+        }
+        .container, .articles{
+            display: flex;
+            justify-content: space-around;
+        }
+        .container div, .articles div{
+            width: 50%;
+        }
+        span{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node">About Node / MDN</a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling">nextSibling / MDN</a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/previousSibling">previousSibling / MDN</a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling">previousElementSibling / MDN</a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling">nextElementSibling / MDN</a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement">parentElement / MDN</a><br>
+        <a href="https://www.w3schools.com/jsref/prop_node_nextsibling.asp">prop_node_nextsibling / W3S</a><br>
+        <a href="https://www.w3schools.com/jsref/prop_node_previoussibling.asp">prop_node_previoussibling / W3S</a><br>
+        <a href="https://www.w3schools.com/jsref/prop_element_nextelementsibling.asp">prop_element_nextelementsibling / W3S</a><br>
+        <a href="https://www.w3schools.com/jsref/prop_element_previouselementsibling.asp">prop_element_previouselementsibling / W3S</a><br>
+        <a href="https://www.w3schools.com/jsref/prop_node_parentelement.asp">prop_node_parentelement / W3S</a><br>
+        <a href=""> / W3S</a><br>
+        <a href=""> / W3S</a><br>
+    </div> 
+    <div style="text-align: left; line-height: 16px;">
+        <h2 style="text-align: center;">HTML DOM Element</h2>
+        <p><span>1-nextSibling:</span> The nextSibling property returns the next node on the same tree level.
+               The nextSibling returnes a node object, it's read-only. <br>
+              <span>Important: </span>nextSibling returns the next sibling node: An element node, a text node, or a comment node.
+                        Whitespace between elements are also text nodes.
+        </p>
+        <p><span>2-previousSibling:</span> The previousSibling property returns the previous node on the same tree level.
+            The previousSibling property returns a node object, it'sread-only. <br>
+         <span>Important: </span>previousSibling returns the previous sibling node: An element node, a text node, or a comment node.
+                    Whitespace between elements are also text nodes.
+        </p>
+        <p><span>3-nextElementSibling:</span> 
+            The nextElementSibling property returns the next element in the same tree level, it's read-only.
+        </p>
+        <p><span>4-previousElementSibling:</span>
+            The previousElementSibling property returns the previous element in the same tree level, it's read-only.
+        </p>
+        <p><span>5-parentNode:</span>
+            The parentNode property returns the parent node of an element or node, it's read-only.
+        </p>
+        <p><span>6-parentElement:</span>
+            The parentElement property returns the parent element of the specified element.
+        </p>
+    </div>
+    </div>
+    <div class="articles">
+    <div style="text-align: left; line-height: 16px;">
+        <h2 style="text-align: center">HTML Nodes vs Elements</h2>
+        <p>
+            <span>Nodes</span> are all nodes (element nodes, text nodes, and comment nodes). <br>
+            Whitespace between elements are also text nodes. <br>
+            <span>Elements</span> are only element nodes.
+        </p>
+        <h2 style="text-align: center">childNodes vs children</h2>
+        <p>
+            <span>childNodes</span> returns child nodes (element nodes, text nodes, and comment nodes). <br>
+            <span>children</span> returns child elements (not text and comment nodes).
+        </p>
+    </div>
+    <div style="text-align: left; line-height: 16px;">
+        <h2 style="text-align: center">Siblings vs Element Siblings</h2>
+        <p>
+            <span>Siblings</span> are "brothers" and "sisters".
+            Siblings are <span>nodes</span> with the same parent <br>
+            (in the same childNodes list). <br>
+            <span>Element Siblings</span> are <span>elements</span> with the same parent (in the same children list).
+        </p>
+        <p><span>The difference</span> between parentElement and parentNode, is that <span>parentElement</span> returns null if the parent node is not an element node.</p>
+        <hr>
+        <h2 style="color: red;">Test</h2>
+        <div class="my-div">
+            <span id="sp1">Span ONE/</span><!--Comment after span one-->
+            <span id="sp2">Span TOW/</span><!--Comment after span tow-->
+            <span id="sp3">Span THREE</span><!--Comment after span three-->
+            <p>Look in JS file, and <span id="cnsl">console !</span></p>
+            <p>Bye...</p>
+        </div>
+    </div>
+    </div>
+
+    <script src="15-1-dom.js"></script>
+
+</body>
+</html>
